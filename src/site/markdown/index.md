@@ -19,9 +19,9 @@ TBD
 
 ### AEM Version Support Matrix
 
-|URL Handler version |AEM version supported
-|--------------------|----------------------
-|1.0.0 or higher     |AEM 6.5.7+, AEMaaCS
+|Site API Handler version |AEM version supported
+|---------------------------|----------------------
+|1.0.0 or higher            |AEM 6.5.7+, AEMaaCS
 
 
 ### Dependencies
