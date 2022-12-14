@@ -14,7 +14,15 @@ Support wcm.io Handler infrastructure in Site API.
 
 ### Overview
 
-TBD
+The Site API Handler extensions provide:
+
+* Link Handler Pre-Processor that rewrites internal links to Site API URL-links when rendered within a Site API request (including serving content via Sling Models Exporter)
+* Link Handler Markup Builder that customizes the generated anchor markup in rich text HTML fragments by applying the custom attributes from project-specific link representations
+* Decorate links and media references with project-specific Java objects
+* Detect content path references in context-aware configurations and map them to link and media reference decorations
+* Built-in `navigation` processor building navigation structure starting from site root (as configured via URL handler/Site configuration)
+* Based on [Site API General Concepts][siteapi-general-concepts] and [Site API Processor][siteapi-processor]
+* Based on [Context-Aware Services][wcmio-sling-context-aware-services] for provider type service interfaces
 
 
 ### AEM Version Support Matrix
@@ -48,3 +56,6 @@ Sources: https://github.com/wcm-io/io.wcm.site-api.handler
 [usage]: usage.html
 [apidocs]: apidocs/
 [changelog]: changes-report.html
+[siteapi-general-concepts]: https://wcm.io/site-api/general-concepts.html
+[siteapi-processor]: https://wcm.io/site-api/processor/
+[wcmio-sling-context-aware-services]: https://wcm.io/sling/commons/context-aware-services.html
