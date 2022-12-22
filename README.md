@@ -7,7 +7,7 @@
 Support wcm.io Handler infrastructure in Site API.
 
 Documentation: https://wcm.io/site-api/handler/<br/>
-Issues: https://wcm-io.atlassian.net/projects/WHAN<br/>
+Issues: https://github.com/wcm-io/io.wcm.site-api.handler/issues<br/>
 Wiki: https://wcm-io.atlassian.net/wiki/<br/>
 Continuous Integration: https://github.com/wcm-io/io.wcm.site-api.handler/actions<br/>
 Commercial support: https://wcm.io/commercial-support.html
