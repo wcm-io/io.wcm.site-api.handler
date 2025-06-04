@@ -1,4 +1,4 @@
-## About Site API Handler Extensions
+## About Site API Handler Extension
 
 Support wcm.io Handler infrastructure in Site API.
 
@@ -14,7 +14,7 @@ Support wcm.io Handler infrastructure in Site API.
 
 ### Overview
 
-The Site API Handler extensions provide:
+The Site API Handler Extension provide:
 
 * Link Handler Pre-Processor that rewrites internal links to Site API URL-links when rendered within a Site API request (including serving content via Sling Models Exporter)
 * Link Handler Markup Builder that customizes the generated anchor markup in rich text HTML fragments by applying the custom attributes from project-specific link representations

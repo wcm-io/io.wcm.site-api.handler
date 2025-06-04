@@ -1,4 +1,4 @@
-<img src="https://wcm.io/images/favicon-16@2x.png"/> Site API Handler Extensions
+<img src="https://wcm.io/images/favicon-16@2x.png"/> Site API Handler Extension
 ======
 [![Build](https://github.com/wcm-io/io.wcm.site-api.handler/workflows/Build/badge.svg?branch=develop)](https://github.com/wcm-io/io.wcm.site-api.handler/actions?query=workflow%3ABuild+branch%3Adevelop)
 [![Maven Central](https://img.shields.io/maven-central/v/io.wcm/io.wcm.site-api.handler)](https://repo1.maven.org/maven2/io/wcm/io.wcm.site-api.handler/)

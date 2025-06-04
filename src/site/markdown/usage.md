@@ -1,4 +1,4 @@
-## Site API Handler Extensions usage
+## Site API Handler Extension usage
 
 ### Configure Link and Media Decorators
 
@@ -54,7 +54,7 @@ You can enable the built-in processors by providing an OSGi configuration:
 
 ### Map Context-Aware Configurations with Link and Media references
 
-The Site API Handler Extensions provide with [ContentPathPropertyMapper][ContentPathPropertyMapper] a default implementation to customize the serialization of Context-Aware Configurations. It detects link and media references and maps them to the configured link and media decoration.
+The Site API Handler Extension provide with [ContentPathPropertyMapper][ContentPathPropertyMapper] a default implementation to customize the serialization of Context-Aware Configurations. It detects link and media references and maps them to the configured link and media decoration.
 
 This may be enough for your project. If you need more control about the mapping e.g. based on additional custom properties in the context-aware configuration definitions you can implement your own mapper with a higher service ranking.
 
