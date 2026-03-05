@@ -169,8 +169,8 @@ public class ContentPathPropertyMapper implements ContextAwareConfigurationPrope
    */
   private ValueMap convertToValueMap(Map<String, String> properties) {
     return new ValueMapDecorator(properties.entrySet().stream()
-        .map(entry -> Map.<String, Object>entry(entry.getKey(), StringUtils.split(entry.getValue(), ",")))
-        .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue)));
+      .map(entry -> Map.<String, Object>entry(entry.getKey(), StringUtils.split(entry.getValue(), ",")))
+      .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue)));
   }
 
 }

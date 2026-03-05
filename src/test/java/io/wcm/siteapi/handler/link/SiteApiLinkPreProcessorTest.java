@@ -57,8 +57,8 @@ class SiteApiLinkPreProcessorTest {
   @Test
   void testSiteApiRequest_CustomSuffix() {
     assertEquals("/content/test.site.api/suffix1.json", linkHandler.get(page)
-        .property(SiteApiLinkPreProcessor.SUFFIX_PROPERTY, "suffix1")
-        .buildUrl());
+      .property(SiteApiLinkPreProcessor.SUFFIX_PROPERTY, "suffix1")
+      .buildUrl());
   }
 
   @Test

@@ -35,11 +35,11 @@ public class LinkHandlerConfigImpl extends LinkHandlerConfig {
 
   private final List<Class<? extends LinkProcessor>> preProcessors = Stream.concat(
       Stream.of(SiteApiLinkPreProcessor.class), super.getPreProcessors().stream())
-      .collect(Collectors.toList());
+    .collect(Collectors.toList());
 
   private final List<Class<? extends LinkMarkupBuilder>> linkMarkupBuilders = Stream.concat(
       Stream.of(SiteApiLinkMarkupBuilder.class), super.getMarkupBuilders().stream())
-      .collect(Collectors.toList());
+    .collect(Collectors.toList());
 
   @Override
   public @NotNull List<Class<? extends LinkProcessor>> getPreProcessors() {
