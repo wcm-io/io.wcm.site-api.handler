@@ -121,13 +121,13 @@ class ContentPathPropertyMapperTest {
     context.create().assetRenditionWebEnabled(asset);
 
     MediaFormat mfLandscape = MediaFormatBuilder.create("2-1")
-        .ratio(2, 1)
-        .extensions("png")
-        .build();
+      .ratio(2, 1)
+      .extensions("png")
+      .build();
     MediaFormat mfSquare = MediaFormatBuilder.create("1-1")
-        .ratio(1, 1)
-        .extensions("png")
-        .build();
+      .ratio(1, 1)
+      .extensions("png")
+      .build();
 
     context.registerService(MediaFormatProvider.class, new MediaFormatProvider(Set.of(mfLandscape, mfSquare)) {
       // provide media formats

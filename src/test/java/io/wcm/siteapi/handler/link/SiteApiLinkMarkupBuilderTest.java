@@ -58,8 +58,8 @@ class SiteApiLinkMarkupBuilderTest {
   @Test
   void testSiteApiRequest() {
     Link link = linkHandler.get(page)
-        .windowTarget("_blank")
-        .build();
+      .windowTarget("_blank")
+      .build();
     assertEquals("<a href=\"/content/test.site.api/content.json\" "
         + "data-page-path=\"/content/test\" "
         + "data-type=\"internal\" "
@@ -73,8 +73,8 @@ class SiteApiLinkMarkupBuilderTest {
     context.requestPathInfo().setExtension(null);
 
     Link link = linkHandler.get(page)
-        .windowTarget("_blank")
-        .build();
+      .windowTarget("_blank")
+      .build();
 
     assertEquals("<a href=\"/content/test.html\" target=\"_blank\">",
         link.getMarkup());

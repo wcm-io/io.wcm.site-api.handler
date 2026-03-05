@@ -43,9 +43,9 @@ public class HandlerUrlBuilder implements UrlBuilder {
     LinkHandler linkHandler = AdaptTo.notNull(request, LinkHandler.class);
     // we do not need to specify Site API selector/extension here - this applied by SiteApiLinkPreProcessor
     return linkHandler.get(page)
-        .property(SiteApiLinkPreProcessor.SUFFIX_PROPERTY, suffix)
-        .property(SiteApiLinkPreProcessor.SUFFIX_EXTENSION_PROPERTY, suffixExtension)
-        .buildUrl();
+      .property(SiteApiLinkPreProcessor.SUFFIX_PROPERTY, suffix)
+      .property(SiteApiLinkPreProcessor.SUFFIX_EXTENSION_PROPERTY, suffixExtension)
+      .buildUrl();
   }
 
 }

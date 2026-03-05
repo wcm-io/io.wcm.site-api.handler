@@ -48,7 +48,9 @@ import io.wcm.siteapi.processor.util.JsonObjectMapper;
  * provided by {@link LinkDecorator} implementation.
  */
 @ProviderType
-@Model(adaptables = { SlingHttpServletRequest.class, Resource.class },
+@Model(adaptables = {
+    SlingHttpServletRequest.class, Resource.class
+},
     adapters = LinkMarkupBuilder.class)
 public final class SiteApiLinkMarkupBuilder implements LinkMarkupBuilder {
 
@@ -91,10 +93,10 @@ public final class SiteApiLinkMarkupBuilder implements LinkMarkupBuilder {
       return Stream.empty();
     }
     return jsonObjectMapper.toMap(decorated).entrySet().stream()
-        .filter(entry -> entry.getValue() != null)
-        .map(entry -> new AnchorAttribute(entry.getKey(), entry.getValue()))
-        .filter(not(AnchorAttribute::isIgnore))
-        .sorted();
+      .filter(entry -> entry.getValue() != null)
+      .map(entry -> new AnchorAttribute(entry.getKey(), entry.getValue()))
+      .filter(not(AnchorAttribute::isIgnore))
+      .sorted();
   }
 
 }

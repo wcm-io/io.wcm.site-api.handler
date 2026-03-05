@@ -42,7 +42,9 @@ import io.wcm.siteapi.processor.url.SiteApiConfiguration;
  * Adapts link handling within Site API requests: Links to internal pages are rewritten to Site API "content" links.
  */
 @ProviderType
-@Model(adaptables = { SlingHttpServletRequest.class, Resource.class },
+@Model(adaptables = {
+    SlingHttpServletRequest.class, Resource.class
+},
     adapters = LinkProcessor.class)
 public final class SiteApiLinkPreProcessor implements LinkProcessor {
 
