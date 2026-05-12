@@ -41,7 +41,7 @@ class HandlerUrlBuilderTest {
   private Page page;
 
   @BeforeEach
-  void setUp() throws Exception {
+  void setUp() {
     underTest = context.registerInjectActivateService(HandlerUrlBuilder.class);
     page = context.currentPage(context.create().page("/content/test"));
   }

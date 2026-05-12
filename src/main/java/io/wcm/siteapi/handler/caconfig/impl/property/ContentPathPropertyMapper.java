@@ -23,6 +23,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.Strings;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
@@ -79,7 +80,7 @@ public class ContentPathPropertyMapper implements ContextAwareConfigurationPrope
     if (properties == null) {
       return false;
     }
-    return StringUtils.equals(properties.get(PROPERTY_WIDGET_TYPE), WIDGET_TYPE_PATHBROWSER);
+    return Strings.CS.equals(properties.get(PROPERTY_WIDGET_TYPE), WIDGET_TYPE_PATHBROWSER);
   }
 
   @Override
@@ -113,7 +114,7 @@ public class ContentPathPropertyMapper implements ContextAwareConfigurationPrope
    * Checks if the resource is a AEM page.
    */
   private boolean isPage(@NotNull Resource resource) {
-    return StringUtils.equals(resource.getResourceType(), NameConstants.NT_PAGE);
+    return Strings.CS.equals(resource.getResourceType(), NameConstants.NT_PAGE);
   }
 
   /**
@@ -133,12 +134,13 @@ public class ContentPathPropertyMapper implements ContextAwareConfigurationPrope
    * Checks if the resource is an AEM asset.
    */
   private boolean isAsset(@NotNull Resource resource) {
-    return StringUtils.equals(resource.getResourceType(), DamConstants.NT_DAM_ASSET);
+    return Strings.CS.equals(resource.getResourceType(), DamConstants.NT_DAM_ASSET);
   }
 
   /**
    * Resolves a reference to the asset using media handler and returns the decorated reference.
    */
+  @SuppressWarnings("PMD.AvoidCatchingGenericException")
   private @Nullable Object buildMediaReference(@NotNull Resource resource,
       @NotNull PropertyMetadata<?> metadata, @NotNull SlingHttpServletRequest request) {
     MediaHandler mediaHandler = AdaptTo.notNull(request, MediaHandler.class);

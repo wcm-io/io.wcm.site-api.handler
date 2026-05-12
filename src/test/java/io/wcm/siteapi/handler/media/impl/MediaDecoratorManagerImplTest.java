@@ -48,7 +48,7 @@ class MediaDecoratorManagerImplTest {
   private Asset asset;
 
   @BeforeEach
-  void setUp() throws Exception {
+  void setUp() {
     underTest = context.registerInjectActivateService(MediaDecoratorManagerImpl.class);
 
     context.currentPage(context.create().page("/content/test"));

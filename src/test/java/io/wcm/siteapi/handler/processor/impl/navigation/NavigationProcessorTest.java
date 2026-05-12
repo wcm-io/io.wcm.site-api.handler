@@ -51,7 +51,7 @@ class NavigationProcessorTest {
   private Page rootPage;
 
   @BeforeEach
-  void setUp() throws Exception {
+  void setUp() {
     context.registerService(LinkDecorator.class, new UrlLinkDecorator());
     context.registerInjectActivateService(LinkDecoratorManagerImpl.class);
     underTest = context.registerInjectActivateService(NavigationProcessor.class);

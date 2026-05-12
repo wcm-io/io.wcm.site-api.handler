@@ -22,8 +22,8 @@ package io.wcm.siteapi.handler.processor.impl.navigation;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 
-import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -41,7 +41,7 @@ class NavigationItem {
   }
 
   public @NotNull String getTitle() {
-    return StringUtils.defaultString(this.page.getNavigationTitle(), this.page.getTitle());
+    return Objects.toString(this.page.getNavigationTitle(), this.page.getTitle());
   }
 
   public @NotNull Object getLink() {

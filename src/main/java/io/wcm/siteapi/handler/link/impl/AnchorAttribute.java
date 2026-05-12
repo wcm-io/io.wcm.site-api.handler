@@ -24,7 +24,7 @@ import static io.wcm.siteapi.handler.link.impl.PropertyName.toKebabCase;
 import java.util.Set;
 import java.util.regex.Pattern;
 
-import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.Strings;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -96,7 +96,7 @@ public class AnchorAttribute implements Comparable<AnchorAttribute> {
   }
 
   private static boolean isTargetSelf(@Nullable String value) {
-    return StringUtils.equals(value, "_self");
+    return Strings.CS.equals(value, "_self");
   }
 
 }

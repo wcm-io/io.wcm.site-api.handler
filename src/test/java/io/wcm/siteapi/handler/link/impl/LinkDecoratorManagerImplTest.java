@@ -44,7 +44,7 @@ class LinkDecoratorManagerImplTest {
   private LinkHandler linkHandler;
 
   @BeforeEach
-  void setUp() throws Exception {
+  void setUp() {
     underTest = context.registerInjectActivateService(LinkDecoratorManagerImpl.class);
 
     context.currentPage(context.create().page("/content/test"));
